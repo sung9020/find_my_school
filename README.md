@@ -10,7 +10,7 @@ Gradle
 
 ---
 
-- 사용 텍스트 데이터  
+- 사용 텍스트 데이터(jar 파일과 같이 위치시켜야함)  
   - 필터링 대상 댓글리스트  
     - 파일명 : `comments.csv`  
   - Komoran 라이브러리 형태소 학습 파일  
@@ -32,7 +32,7 @@ Gradle
 - 구동 방법  
 -> cmd나 쉘에서 아래 명령어를 입력  
 -> `java -jar findMySchool.jar`(jar 파일 경로)  
--> 사용 텍스트 데이터를 모두 jar파일 위치에 같이 위치.
-  - comments.csv
-  - user_dic.txt
-  - mySchool.csv
+-> 사용 텍스트 데이터를 모두 jar 파일 위치에 같이 위치.  
+  - comments.csv  
+  - user_dic.txt  
+  - mySchool.csv  
