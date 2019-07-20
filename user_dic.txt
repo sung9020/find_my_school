@@ -22,3 +22,6 @@
 북중학교	NNP
 북여자중학교	NNP
 양청중	NNP
+서초현	NNP
+성화중	NNP
+정화중	NNP
