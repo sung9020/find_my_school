@@ -23,8 +23,11 @@ jar {
     }
 }
 
-dependencies {
+configurations {
+    jar.archiveName = 'findMySchool.jar'
+}
 
+dependencies {
     compile 'org.projectlombok:lombok:1.18.8'
     testCompileOnly 'org.projectlombok:lombok:1.18.8'
     annotationProcessor 'org.projectlombok:lombok:1.18.8'
