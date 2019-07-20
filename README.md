@@ -15,7 +15,6 @@ Gradle
     - 파일명 : `comments.csv`  
   - Komoran 라이브러리 형태소 학습 파일  
     - 파일명 : `user_dic.txt`  
-    - 출처 : https://github.com/shin285/KOMORAN  
   - 공공데이터 학교명 데이터 파일  
     - 파일명 : `mySchool.csv`  
     - 출처 : https://www.data.go.kr  
