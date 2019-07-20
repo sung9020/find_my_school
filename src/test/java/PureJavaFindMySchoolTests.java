@@ -1,5 +1,3 @@
-import kr.co.shineware.nlp.komoran.constant.DEFAULT_MODEL;
-import kr.co.shineware.nlp.komoran.core.Komoran;
 import org.hamcrest.Matchers;
 import org.junit.Before;
 import org.junit.Test;
@@ -26,7 +24,7 @@ public class PureJavaFindMySchoolTests {
 
     // FIXME 단순 패턴 형태는 형태소를 거르지 못함, 오히려 미학습 OKT보다 적중이 높은듯..
 
-    private final Logger logger = LoggerFactory.getLogger(KomoranFindMySchoolTests.class);
+    private final Logger logger = LoggerFactory.getLogger(PureJavaFindMySchoolTests.class);
     private List<String> mySchools;
     private List<String> dic;
     private Pattern patten = Pattern.compile("[^-<@(?!)❗❣#★❤\"\\[.,/ ㅠㅜㅎ~>♡']+(초등학교|초|중학교|중|고등학교|고|대학교|대)");
@@ -138,8 +136,6 @@ public class PureJavaFindMySchoolTests {
     }
 
     private List<String> getBasicData(){
-        Komoran komoran = new Komoran(DEFAULT_MODEL.FULL);
-        komoran.setUserDic("user_dic.txt");
         List<String> basicData = new ArrayList<>();
         try{
             Stream<String> lines = Files.lines(Paths.get("comments.csv"));

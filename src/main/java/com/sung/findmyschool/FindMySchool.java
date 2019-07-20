@@ -47,6 +47,7 @@ public class FindMySchool {
         return fileData;
     }
 
+    // 패턴 & 공공 데이터(학교명) 활용 필터링
     private static List<String> getFilterData(List<String> basicData){
         List<String> filterData = new ArrayList<>();
         basicData.forEach(str -> {
@@ -62,6 +63,7 @@ public class FindMySchool {
         return filterData;
     }
 
+    //학교 이름 판단 함수
     private static boolean isSchool(String name){
         List<String> mySchools = DataUtils.getDatabyCsv(MY_SCHOOL_DATA_PATH);
 
@@ -73,6 +75,7 @@ public class FindMySchool {
         return false;
     }
 
+    // 학교별 출현 횟수 카운트
     private static Map<String, Integer> getMySchoolCount(List<String> basicData){
         Map<String, Integer> mySchoolCount = new TreeMap<>();
 
