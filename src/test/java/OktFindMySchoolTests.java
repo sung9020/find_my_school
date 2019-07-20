@@ -1,7 +1,5 @@
 import kr.co.shineware.nlp.komoran.constant.DEFAULT_MODEL;
 import kr.co.shineware.nlp.komoran.core.Komoran;
-import kr.co.shineware.nlp.komoran.model.KomoranResult;
-import kr.co.shineware.nlp.komoran.model.Token;
 import org.hamcrest.Matchers;
 import org.junit.Before;
 import org.junit.Test;
@@ -29,11 +27,12 @@ import static org.junit.Assert.assertThat;
  * @author 123msn
  * @since 2019-07-20
  */
-public class OtkFindMySchoolTests {
+public class OktFindMySchoolTests {
 
     //FIXME 학습 시켜야할 고유명사 데이터가 너무 많음(하나하나 구분이 불가)
+    // 로딩 매우 느림!!
 
-    private final Logger logger = LoggerFactory.getLogger(OtkFindMySchoolTests.class);
+    private final Logger logger = LoggerFactory.getLogger(OktFindMySchoolTests.class);
     private List<String> mySchools;
     private List<String> dic;
     private Pattern patten = Pattern.compile("[^ ]+(초등학교|초|중학교|중|고등학교|고|대학교|대)");
@@ -131,7 +130,6 @@ public class OtkFindMySchoolTests {
             assertThat(Files.size(Paths.get("result.txt")), Matchers.greaterThan(0L));
         }catch (IOException e){
             e.printStackTrace();
-            logger.error("# 파일 쓰기 에러");
         }
     }
 
