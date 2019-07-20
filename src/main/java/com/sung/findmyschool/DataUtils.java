@@ -19,7 +19,7 @@ import java.util.stream.Collectors;
 public class DataUtils {
     private final static Logger logger = LoggerFactory.getLogger(DataUtils.class);
 
-    public static List<String> getDatabyCsv(String fileName){
+    public static List<String> getDataByCsv(String fileName){
         List<String> Data = new ArrayList<>();
         try{
             Data = Files.lines(Paths.get(fileName)).collect(Collectors.toList());

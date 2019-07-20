@@ -65,7 +65,7 @@ public class FindMySchool {
 
     //학교 이름 판단 함수
     private static boolean isSchool(String name){
-        List<String> mySchools = DataUtils.getDatabyCsv(MY_SCHOOL_DATA_PATH);
+        List<String> mySchools = DataUtils.getDataByCsv(MY_SCHOOL_DATA_PATH);
 
         for(String school : mySchools){
             if(name.contains(school)){
@@ -91,7 +91,7 @@ public class FindMySchool {
     }
 
     public static void main(String[] args) {
-        List<String> basicData = getBasicDataByKomoran(DataUtils.getDatabyCsv(COMMENT_DATA_PATH));
+        List<String> basicData = getBasicDataByKomoran(DataUtils.getDataByCsv(COMMENT_DATA_PATH));
         logger.info("##형태소 필터 완료");
 
         List<String> filterData = getFilterData(basicData);
