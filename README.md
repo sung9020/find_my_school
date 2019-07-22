@@ -36,3 +36,8 @@ Gradle
   - comments.csv  
   - user_dic.txt  
   - mySchool.csv  
+
+---
+
+- 바로 테스트 가능한 폴더
+  - release 폴더에 jar 파일과 사용 텍스트 데이터가 있어 바로 테스트 가능.

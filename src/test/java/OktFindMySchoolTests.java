@@ -145,8 +145,6 @@ public class OktFindMySchoolTests {
     }
 
     private List<String> getBasicDataByOtk(){
-        Komoran komoran = new Komoran(DEFAULT_MODEL.FULL);
-        komoran.setUserDic("user_dic.txt");
         List<String> basicData = new ArrayList<>();
         try{
             Stream<String> lines = Files.lines(Paths.get("comments.csv"));
